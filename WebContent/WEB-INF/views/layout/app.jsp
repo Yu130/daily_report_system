@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="C" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -10,16 +10,18 @@
     </head>
     <body>
         <div id="wrapper">
-            <h1>日報管理システム</h1>
-        </div>
-        <div id="content">
-            ${param.content}
-        </div>
-        <div id="footer">
+            <div id="header">
+                <h1>日報管理システム</h1>
+            </div>
+            <div id="content">
+                ${param.content}
+            </div>
+            <div id="footer">
             --------------------------------------------------------<br>
             YA<br>
             If you dig a hole for someone else, you’ll fall into it.<br>
             --------------------------------------------------------
+            </div>
         </div>
     </body>
 </html>
